@@ -1,8 +1,27 @@
 #include<iostream>
-#include "BubbleSort.h"
+#include<vector>
+#include"BubbleSort.h"
 using namespace std;
 
+void print(vector<int>& A, int n) {
+	
+	for (int i = 0; i < n; i++) {
+		cout << A[i] << " ";
+	}
+}
 
+vector<int> createArray() {
+	int n;
+	cout << "\nEnter the number of elements in Array : ";
+	cin >> n;
+	vector<int>A(n);
+	cout << "Enter the elements : " << endl;
+	for (int i = 0; i < n; i++) {
+		cout << "Enter element [" << i + 1 << "] : ";
+		cin >> A[i];
+	}
+	return A;
+}
 
 int main() {
 	cout << "######### Welcome to Sorting Techniques Program ##########"<<endl;
@@ -24,8 +43,19 @@ int main() {
 		cout << "\nEnter your choice : ";
 		cin >> ch;
 
+		vector<int>A;
+		int n;
+		
 		if (ch == 1) {
-			BubbleSort();
+			A = createArray();
+			n = A.size();
+			cout << "\nArray Before Sorting : ";
+			print(A, n);
+			cout << endl;
+			cout << "\nArray After Sorting : ";
+			BubbleSort(A, n);
+			print(A, n);
+			cout << endl << endl;;
 		}
 		else if (ch == 2) {
 
