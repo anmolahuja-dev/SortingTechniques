@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include"BubbleSort.h"
+#include"InsertionSort.h"
 using namespace std;
 
 void print(vector<int>& A, int n) {
@@ -58,7 +59,15 @@ int main() {
 			cout << endl << endl;;
 		}
 		else if (ch == 2) {
-
+			A = createArray();
+			n = A.size();
+			cout << "\nArray Before Sorting : ";
+			print(A, n);
+			cout << endl;
+			cout << "\nArray After Sorting : ";
+			InsertionSort(A, n);
+			print(A, n);
+			cout << endl << endl;
 		}
 		else if (ch == 3) {
 
