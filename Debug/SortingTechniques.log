@@ -1,2 +1,3 @@
 ﻿  SortingTechniques.cpp
+C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\SelectionSort.h(7,6): warning C4101: 'i': unreferenced local variable
   SortingTechniques.vcxproj -> C:\Users\anmol\source\repos\SortingTechniques\Debug\SortingTechniques.exe

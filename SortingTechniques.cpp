@@ -2,6 +2,8 @@
 #include<vector>
 #include"BubbleSort.h"
 #include"InsertionSort.h"
+#include"SelectionSort.h"
+#include"QuickSort.h"
 using namespace std;
 
 void print(vector<int>& A, int n) {
@@ -32,9 +34,9 @@ int main() {
 		cout << "[1] - Bubble Sort" << endl;
 		cout << "[2] - Insertion Sort" << endl;
 		cout << "[3] - Selection Sort" << endl;
-		cout << "[4] - Heap Sort" << endl;
+		cout << "[4] - Quick Sort" << endl;
 		cout << "[5] - Merge Sort" << endl;
-		cout << "[6] - Quick Sort" << endl;
+		cout << "[6] - Heap Sort" << endl;
 		cout << "[7] - Tree Sort" << endl;
 		cout << "[8] - Shell Sort" << endl;
 		cout << "[9] - Count Sort" << endl;
@@ -56,7 +58,7 @@ int main() {
 			cout << "\nArray After Sorting : ";
 			BubbleSort(A, n);
 			print(A, n);
-			cout << endl << endl;;
+			cout << endl << endl;
 		}
 		else if (ch == 2) {
 			A = createArray();
@@ -70,10 +72,28 @@ int main() {
 			cout << endl << endl;
 		}
 		else if (ch == 3) {
-
+			A = createArray();
+			n = A.size();
+			cout << "\nArray Before Sorting : ";
+			print(A, n);
+			cout << endl;
+			cout << "\nArray After Sorting : ";
+			SelectionSort(A, n);
+			print(A, n);
+			cout << endl << endl;
 		}
 		else if (ch == 4) {
-
+			A = createArray();
+			n = A.size();
+			cout << "\nArray Before Sorting : ";
+			print(A, n);
+			cout << endl;
+			cout << "\nArray After Sorting : ";
+			A.push_back(INT32_MAX);
+			n = A.size();
+			QuickSort(A,0,n-1);
+			print(A, n-1);
+			cout << endl << endl;
 		}
 		else if (ch == 5) {
 
