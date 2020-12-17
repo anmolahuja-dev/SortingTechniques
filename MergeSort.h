@@ -62,6 +62,20 @@ void RMergeSort(vector<int>& A, int l, int h) {
 
 
 void MergeSort(vector<int>& A, int n) {
-	RMergeSort(A,0,n-1);
+	int sub_ch;
+	cout << "\nWhich type of Merge Sort, you want to perform ? " << endl;
+	cout << "[1] - Iterative" << endl;
+	cout << "[2] - Recursive" << endl;
+	cout << "Enter your choice : ";
+	cin >> sub_ch;
+	if (sub_ch == 1) {
+		IMergeSort(A, n);
+	}
+	else if (sub_ch == 2) {
+		RMergeSort(A, 0, n - 1);
+	}
+	else {
+		cout << "\nInvalid choice!" << endl;
+	}
 
 }
