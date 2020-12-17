@@ -1,3 +1,3 @@
 ﻿  SortingTechniques.cpp
-C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\SelectionSort.h(7,6): warning C4101: 'i': unreferenced local variable
+C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\MergeSort.h(42,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   SortingTechniques.vcxproj -> C:\Users\anmol\source\repos\SortingTechniques\Debug\SortingTechniques.exe

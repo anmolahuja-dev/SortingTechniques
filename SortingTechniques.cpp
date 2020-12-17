@@ -4,6 +4,7 @@
 #include"InsertionSort.h"
 #include"SelectionSort.h"
 #include"QuickSort.h"
+#include"MergeSort.h"
 using namespace std;
 
 void print(vector<int>& A, int n) {
@@ -96,7 +97,15 @@ int main() {
 			cout << endl << endl;
 		}
 		else if (ch == 5) {
-
+			A = createArray();
+			n = A.size();
+			cout << "\nArray Before Sorting : ";
+			print(A, n);
+			cout << endl;
+			cout << "\nArray After Sorting : ";
+			MergeSort(A, n);
+			print(A, n);
+			cout << endl << endl;
 		}
 		else if (ch == 6) {
 
