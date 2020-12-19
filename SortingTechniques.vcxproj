@@ -142,10 +142,14 @@
     <ClCompile Include="SortingTechniques.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinSort.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="CountSort.h" />
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="RadixSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="Swap.h" />
   </ItemGroup>

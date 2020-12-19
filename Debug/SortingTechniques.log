@@ -1,3 +1,5 @@
 ﻿  SortingTechniques.cpp
 C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\MergeSort.h(42,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\CountSort.h(7,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\anmol\source\repos\SortingTechniques\SortingTechniques\CountSort.h(23,20): warning C4018: '<': signed/unsigned mismatch
   SortingTechniques.vcxproj -> C:\Users\anmol\source\repos\SortingTechniques\Debug\SortingTechniques.exe
